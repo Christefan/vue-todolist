@@ -20,7 +20,7 @@
                 <ul>
                     <li v-for="(element , index) in arrDoList">
                         <span :class="element.done === true ? 'textline' : ''">{{element.text}}</span>
-                        <span class="remove" @click="removeTodo">X</span>
+                        <span class="remove" @click="removeTodo(index)">X</span>
                     </li>
                 </ul>
             </div>

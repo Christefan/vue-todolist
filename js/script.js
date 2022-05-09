@@ -27,7 +27,7 @@ const app = new Vue (
 
             addNewTodo: function() {
                 const newTodo = {
-                    text: this.addTodoText,
+                    text: this.addTodoText.trim(),
                     done: true
                 }
                 this.arrDoList.push(newTodo)
